@@ -2,7 +2,7 @@ import { Image, Pressable, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import React from "react";
 import { StatusBar } from "expo-status-bar";
-import { Link } from "expo-router";
+import { Link, router } from "expo-router";
 import Button from "@/components/Button";
 
 export default function Index() {
@@ -47,7 +47,7 @@ export default function Index() {
         <Link href="/home" className="text-white mt-4">
           Go to Home
         </Link>
-        
+                
 
 
       </SafeAreaView>

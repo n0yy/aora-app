@@ -13,7 +13,7 @@ export default function Button({ title, handlePress, containerStyles, textStyles
         <TouchableOpacity
             onPress={handlePress}
             activeOpacity={0.7}
-            className={`bg-secondary rounded-xl min-h-[54px] flex flex-row justify-center items-center ${containerStyles} ${isLoading && "opacity-50"}`}
+            className={`bg-secondary rounded-lg min-h-[40px] flex flex-row justify-center items-center ${containerStyles} ${isLoading && "opacity-50"}`}
             disabled={isLoading}
         >
             <Text className={`text-primary font-psemibold ${textStyles} text`}>{title}</Text>

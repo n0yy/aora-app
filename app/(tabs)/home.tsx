@@ -3,6 +3,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { useState } from "react";
 import Button from "@/components/Button";
 import Ionicons from '@expo/vector-icons/Ionicons';
+import React from "react";
 
 export default function Home() {
     const [searchQuery, setSearchQuery] = useState<string>("");
@@ -37,16 +38,16 @@ export default function Home() {
                     onChangeText={handleSearch}
                     autoCapitalize="none"
                 />
-                <Pressable onPress={() => setSearchQuery("")} className="absolute top-[17px] right-4">
-                    {searchQuery.length > 0 && (
-                        <Ionicons name="close" size={24} color="white" />
-                    )}
-                </Pressable>   
-                <Button 
-                    title="Search Now"
-                    handlePress={() => alert("Your search query is: \n" + searchQuery + ".")}
-                    containerStyles="mt-5 h-7"
-                /> 
+   
+                {searchQuery.length > 0 && (
+                    <> 
+                    <Button 
+                        title="Search Now"
+                        handlePress={() => alert("Your search query is: \n" + searchQuery + ".")}
+                        containerStyles="mt-5 h-7 w-1/2 self-center"
+                    /> 
+                    </>
+                )}
             </View>
 
             {/* End Search Bar */}

@@ -37,19 +37,11 @@ export default function Index() {
           <View className="mt-4">
             <Button 
               title="Continue with Email"
-              handlePress={() => alert("You Clicked!")}
+              handlePress={() => router.push("/login")}
               containerStyles="w-full"
             />
           </View>
         </View>
-        
-        
-        <Link href="/home" className="text-white mt-4">
-          Go to Home
-        </Link>
-                
-
-
       </SafeAreaView>
       <StatusBar style="auto" />
     </>

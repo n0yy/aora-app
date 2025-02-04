@@ -2,7 +2,6 @@ import { View, Text, Image, TextInput, Pressable } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useState } from "react";
 import Button from "@/components/Button";
-import Ionicons from '@expo/vector-icons/Ionicons';
 import React from "react";
 
 export default function Home() {

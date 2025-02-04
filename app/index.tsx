@@ -1,8 +1,8 @@
-import { Image, Pressable, Text, View } from "react-native";
+import { Image, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import React from "react";
 import { StatusBar } from "expo-status-bar";
-import { Link, router } from "expo-router";
+import { router } from "expo-router";
 import Button from "@/components/Button";
 
 export default function Index() {
@@ -24,18 +24,25 @@ export default function Index() {
 
         <View className="px-4">
           <View className="relative ">
-            <Text className="text-white font-pbold text-4xl text-center font-bold">Discover Endless Possibilities with{" "}
+            <Text className="text-white font-pbold text-4xl text-center font-bold">
+              Discover Endless Possibilities with{" "}
               <Text className="text-secondary">Aora</Text>
             </Text>
-            <Image source={require("../assets/images/path.png")} style={{ width: 64, height: 80 }} resizeMode="contain" className="absolute -bottom-10 right-2" />
+            <Image
+              source={require("../assets/images/path.png")}
+              style={{ width: 64, height: 80 }}
+              resizeMode="contain"
+              className="absolute -bottom-10 right-2"
+            />
           </View>
 
           <Text className="text-gray-100 font-pextralight text-lg text-center mt-3">
-          Where Creativity Meets Innovation: Embark on a Journey of Limitless Exploration with Aora
+            Where Creativity Meets Innovation: Embark on a Journey of Limitless
+            Exploration with Aora
           </Text>
           {/* Button */}
           <View className="mt-4">
-            <Button 
+            <Button
               title="Continue with Email"
               handlePress={() => router.push("/login")}
               containerStyles="w-full"
